@@ -1,0 +1,13 @@
+torch>=2.0
+torchvision
+numpy
+opencv-python
+pandas
+scipy
+scikit-image
+lpips
+pyyaml
+tqdm
+einops
+timm
+basicsr

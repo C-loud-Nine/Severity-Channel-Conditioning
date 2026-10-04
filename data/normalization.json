@@ -1,0 +1,30 @@
+{
+  "isp_diff_minmax_all_metadata": [
+    -3830.879,
+    -33.649
+  ],
+  "film_zscore_training_split": {
+    "motion": {
+      "mean": 11.0807,
+      "sd": 5.5614
+    },
+    "isp_diff": {
+      "mean": -1399.7482,
+      "sd": 673.7407
+    },
+    "blur_window": {
+      "mean": 7.2174,
+      "sd": 6.1253
+    },
+    "blur_duration_ms": {
+      "mean": 36.7525,
+      "sd": 32.3176
+    },
+    "noise_estimate": {
+      "mean": 4.7484,
+      "sd": 1.1227
+    }
+  },
+  "n_train": 5714,
+  "n_test": 1686
+}

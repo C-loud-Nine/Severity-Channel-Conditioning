@@ -1,0 +1,19 @@
+# Restormer + severity channel: 20 epochs from the same GoPro-pretrained weights
+backbone: restormer
+arm: scc
+out_dir: runs/restormer_scc
+# Same optimizer settings; 20 epochs for both Restormer runs
+root: /path/to/iPhoneBlur          # {train,test}/{video}/{blur,sharp}/{img_num:05d}.jpg
+metadata: /path/to/complete_metadata.csv
+manifest: data/split_manifest.csv
+severity_dir: cache/severity
+init_ckpt: checkpoints/restormer_motion_deblurring.pth   # official GoPro-pretrained Restormer
+epochs: 20
+batch: 2
+accum: 2
+patch: 256
+lr: 2.0e-5
+lr_min: 1.0e-6
+t_max: 57140          # 20 x 2,857; stepped once per update
+ema: 0.999
+seed: 42              # runs 1-3: 42, 123, 456

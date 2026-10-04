@@ -1,0 +1,7 @@
+fourth_channel,psnr,delta
+None (schedule-matched DAB),31.23,
+Random constant,31.24,0.01
+Shuffled severity,31.22,-0.01
+Image gradient only,31.22,-0.01
+Scale factor gamma only,31.23,0.0
+True severity (SCC),31.3,0.07
